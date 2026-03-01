@@ -281,7 +281,7 @@
 
 <script>
 document.getElementById("bookingForm").addEventListener("submit", function(e) {
-     e.preventDefault();
+     e.preventDefault(); 
 
     var name = document.getElementById("name").value.trim();
     var phone = document.getElementById("phone").value.trim();
@@ -302,7 +302,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
     var whatsappURL = "https://wa.me/256753492143?text=" + message;
 
     window.open(whatsappURL, "_blank");
-}
+});
 </script>
 
 
