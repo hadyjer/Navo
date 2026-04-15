@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">
+            <a href="index.html"><img src="images/logo5.jpg" alt="Navo" class="logo"></a>
+        </div>
+        <nav>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Menu -->
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    </header>
+
+    
+     <!-- Services Section -->
+    <h3>Our Services</h3>
+    <!-- Unordered List -->
+    <ul>
+        <li>On-demand personal drivers</li>
+        <li>Corporate driver services</li>
+        <li>Airport pickup & drop-off</li>
+        <li>Event & wedding drivers</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h3>Most Popular Services</h3>
+    <ul>
+        <li>On-demand daily drivers</li>
+        <li>Airport transfers</li>
+        <li>Night-out safe return</li>
+        <li>Corporate bookings</li>
+    </ul>
+
+    <h3>Why Choose NAVO?</h3>
+    <!-- Ordered list of skills -->
+    <ul>
+        <li>Experienced & background-checked drivers</li>
+        <li>Road-safety compliant</li>
+        <li>Flexible scheduling & retainer options</li>
+        <li>Professional, courteous service every time</li>
+    </ul>
+
+    <!-- Price Table -->
+    <h3>Service Pricing</h3>
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Price</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>On-demand Driver</td>
+            <td>UGX 40,000</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Airport Transfer</td>
+            <td>UGX 50,000</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Night-out Service</td>
+            <td>UGX 50,000</td>
+            <td>Booking</td>
+        </tr>
+        <tr>
+            <td>Monthly drivers</td>
+            <td>UGX Packages</td>
+            <td>Available</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+   
+
+    <script>
+function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("active");
+}
+</script>
+</body>
+</html>

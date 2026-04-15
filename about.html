@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-text">
+            <a href="index.html"><img src="images/logo5.jpg" alt="Navo" class="logo"></a>
+        </div>
+        <nav>
+
+            <!-- Hamburger -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Menu -->
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>About NOVA</h1>
+      <p>Your Car. Our Driver. Safe, professional driving—on your terms.</p>
+    </div>
+    <div class="hero-image">
+      <img src="images/driver.avif" alt="Professional driver">
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="container">
+    <p class="intro">
+      NOVA is Uganda’s driver-on-demand service, connecting you with professional, vetted drivers who drive your car.
+      We make every journey safer, easier, and stress-free.
+    </p>
+  </div>
+</section>
+
+<!-- WHY WE EXIST -->
+<section class="section light">
+  <div class="container">
+    <h2>Why NOVA Exists</h2>
+    <p>
+      We created NOVA to remove the stress of driving—whether after a long day, a night out, or during busy schedules.
+      With a trusted driver, you stay in control while we handle the road.
+    </p>
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section class="section">
+  <div class="container">
+    <h2>Our Promise</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🔒 Safety First</h3>
+        <p>Your safety is our top priority on every trip.</p>
+      </div>
+      <div class="card">
+        <h3>🤝 Trusted Drivers</h3>
+        <p>All drivers are vetted, trained, and professional.</p>
+      </div>
+      <div class="card">
+        <h3>⏱ Reliable</h3>
+        <p>Flexible scheduling that works around your life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="section light">
+  <div class="container">
+    <h2>Why Choose NOVA?</h2>
+    <ul class="list">
+      <li>✔ Background-checked drivers</li>
+      <li>✔ Road-safety compliant</li>
+      <li>✔ Flexible scheduling</li>
+      <li>✔ Professional & discreet service</li>
+    </ul>
+  </div>
+</section>
+
+<!-- IMAGE BREAK -->
+<section class="image-break">
+  <img src="customer.jpg" alt="Customer relaxed in car">
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <h2>Ready to ride stress-free?</h2>
+    <a href="contact.html" class="btn">Book a Driver Now</a>
+  </div>
+</section>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-links").classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

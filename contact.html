@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-text">
+            <a href="index.html"><img src="images/logo5.jpg" alt="Navo" class="logo"></a>
+        </div>
+        <nav>
+
+            <!-- Hamburger -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Menu -->
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<main></main>
+    <!-- Contact Form -->
+    <section class="booking">
+        <h3>Book a Driver</h3>
+
+        <form id="contact-form" action="https://hooks.zapier.com/hooks/catch/27166119/u7fyrzr/" method="POST">
+
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+
+            <label>Service Selection:</label>
+            <select name="service" required>
+                <option value="On-demand Driver">On-demand Driver</option>
+                <option value="Airport Transfer">Airport Transfer</option>
+                <option value="Night-out Service">Night-out Service</option>
+                <option value="Corporate Booking">Corporate Booking</option>
+                <option value="Monthly Driver">Monthly Driver</option>
+            </select>
+
+            <label>Pickup Details:</label>
+            <textarea name="message" placeholder="Enter pickup location and time" required></textarea>
+
+
+            <input type="hidden" name="_next" value="thankyou.html">
+            <button type="submit">Request Driver</button>
+
+
+        </form>
+    </section>
+
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-links").classList.toggle("active");
+        }
+       const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    // Send to Formspree (EMAIL)
+    await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: { 'Accept': 'application/json' }
+    });
+
+    // Get user data
+    const name = data.get("name");
+    const phone = data.get("phone");
+    const service = data.get("service");
+    const message = data.get("message");
+
+    // Create WhatsApp message
+    const whatsappMessage = `Hello, I want to request a driver.
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+Details: ${message}`;
+
+    // Redirect to WhatsApp
+    window.location.href = `https://wa.me/256753492143?text=${encodeURIComponent(whatsappMessage)}`;
+});
+
+
+    </script>
+</body>
+
+</html>
