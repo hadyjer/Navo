@@ -460,5 +460,22 @@ h2 {
         color: #e0e0e0;
     }
 
+    @media (max-width: 768px) {
+        .testimonial-card img{
+            width: 65px;
+            height: 65px;
+        }
+        .footer-info{
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        footer{
+            text-align: center;
+        }
+    }
+
  
       
