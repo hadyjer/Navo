@@ -62,17 +62,16 @@
         <div class="logo-text">
             <a href="index.html"><img src="images/logo5.jpg" alt="Navo" class="logo"></a>
         </div>
+
+        <!-- HAMBURGER -->
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav>
-
-            <!-- Hamburger -->
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
             <!-- Menu -->
-            <ul id="nav-links">
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -129,43 +128,51 @@
         </div>
     </Section>
 
-   <section class="why-section">
+    <section class="why-section">
+        <div>
+            <img src="images/client4.jpg" alt="illustration" width="300px" height="400px" class="why-image">
+        </div>
+        <div>
+            <h2>Why Choose NAVO</h2>
 
-    <h2>Why Choose NAVO</h2>
+            <p class="why-intro">
+                NAVO connects you with professional, trusted drivers who treat your car and your time with respect.
+                Whether it’s a quick trip, a full day, or a monthly arrangement, we make moving around Kampala safe,
+                convenient, and completely stress-free.
+            </p>
 
-    <p class="why-intro">
-        NAVO connects you with professional, trusted drivers who treat your car and your time with respect.
-        Whether it’s a quick trip, a full day, or a monthly arrangement, we make moving around Kampala safe,
-        convenient, and completely stress-free.
-    </p>
-
-    <div class="why-points">
-        <p>✔ Experienced, background-checked drivers you can trust</p>
-        <p>✔ Strong focus on road safety and responsible driving</p>
-        <p>✔ Flexible booking options — on-demand or long-term</p>
-        <p>✔ Consistently professional, respectful service</p>
-    </div>
-
-</section>
+            <div class="why-points">
+                <p>✔ Experienced, background-checked drivers you can trust</p>
+                <p>✔ Strong focus on road safety and responsible driving</p>
+                <p>✔ Flexible booking options — on-demand or long-term</p>
+                <p>✔ Consistently professional, respectful service</p>
+            </div>
+        </div>
+    </section>
 
 
-<section class="promise-section">
+    <section class="promise-section">
 
-    <h2>Our Promise</h2>
+        <div>
+            <h2>Our Promise</h2>
 
-    <p class="promise-intro">
-        We don’t just provide drivers — we deliver peace of mind. Every trip is handled with care,
-        attention, and professionalism so you can focus on what matters most.
-    </p>
+            <p class="promise-intro">
+                We don’t just provide drivers — we deliver peace of mind. Every trip is handled with care,
+                attention, and professionalism so you can focus on what matters most.
+            </p>
 
-    <div class="promise-points">
-        <p><strong>Safety First:</strong> Every journey is handled with your safety as the top priority.</p>
-        <p><strong>Trusted Drivers:</strong> Fully vetted, trained, and experienced professionals.</p>
-        <p><strong>Reliable Service:</strong> Always on time, always dependable.</p>
-    </div>
+            <div class="promise-points">
+                <p><strong>Safety First:</strong> Every journey is handled with your safety as the top priority.</p>
+                <p><strong>Trusted Drivers:</strong> Fully vetted, trained, and experienced professionals.</p>
+                <p><strong>Reliable Service:</strong> Always on time, always dependable.</p>
+            </div>
+        </div>
+        <div>
+            <img src="images/client4.jpg" alt="illustration" width="300px" height="400px" class="promise-image">
+        </div>
+    </section>
 
-</section>
-
+    <hr style="border: 1px solid #e6af2e; margin: 5px 20px;">
 
     <!-- Testimonial -->
     <section class="testimonials">
@@ -241,17 +248,17 @@
 
         </div>
         <br><br>
-        <a href="contact.html" class="hero-btn">Book a driver now</a>
+        <a href="contact.html" class="hero-btn">Book a Driver</a>
 
     </section>
 
 
-    <hr style="border: 1px solid #e6af2e; margin: 5px 20px;">
+    <hr style="border: 1px solid #e6af2e; margin: 15px 20px;">
 
     <footer class="footer">
 
         <div class="footer-info">
-            <b>Quick Links</b>
+            <b style="color: #e6af2e;">Quick Links</b>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
@@ -259,7 +266,7 @@
         </div>
 
         <div class="footer-info">
-            <b>Socials</b>
+            <b style="color: #e6af2e;">Socials</b>
             <a href="https://linkedin.com/in/nakiddehadijah" target="_blank"><i class="fab fa-linkedin"></i>
                 LinkedIn</a>
             <a href="https://facebook.com/hadyjer" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
@@ -268,20 +275,22 @@
         </div>
 
         <div class="footer-info">
-            <b>Contact Info</b>
+            <b style="color: #e6af2e;">Contact Info</b>
             <a href="tel:+256753492143" target="_blank" class="phone"><i class="fas fa-phone"></i> Call Us</a>
             <a href="mailto:nakiddehadijah345@gmail.com" target="_blank" class="email"><i class="fas fa-envelope"></i>
                 Email</a>
             <a href="https://wa.me/256753492143" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i>
                 WhatsApp</a>
             <a href="https://www.google.com/maps?q=Kampala+Uganda" target="_blank"><i
-                    class="fa-solid fa-location-dot"></i> Kampala, Uganda</a>
+                    class="fa-solid fa-location-dot"></i> Kampala (U)</a>
         </div>
 
     </footer>
     <div class="note">
-        <p style="text-align: center;">© 2026 Navo | Your Personal Driving Partner. All rights reserved | <a href="#">Privacy Policy</a> |
-        <a href="#">Terms</a></p>
+        <p style="text-align: center;">© 2026 Navo | Your Personal Driving Partner. All rights reserved |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms</a>
+        </p>
     </div>
 
 
@@ -289,7 +298,7 @@
 
     <script>
         function toggleMenu() {
-            document.getElementById("nav-links").classList.toggle("active");
+            document.querySelector("nav-links").classList.toggle("active");
         }
     </script>
 </body>
