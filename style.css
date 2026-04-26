@@ -177,11 +177,16 @@
  }
 
  .service-container {
+     display: flex;
+     overflow-x: auto;
      column-count: 4;
      column-gap: 20px;
      padding: 15px;
      background-color: #e1e1e1;
      border-radius: 15px;
+     scroll-snap-type: x mandatory;
+     -webkit-overflow-scrolling: touch;
+     /* smooth mobile scroll */
  }
 
  .service-card {
@@ -191,11 +196,17 @@
      overflow: hidden;
      transition: 0.3s;
      display: block;
-     width: 100%;
+     min-width: 280px; /* controls card size */
+     flex: 0 0 auto; /* 🔥 very important */
+     scroll-snap-align: start;
      margin-bottom: 20px;
      text-decoration: none;
      color: inherit;
  }
+
+ .service-container::-webkit-scrollbar {
+    display: none;
+}
 
  .service-content {
      padding: 15px;
@@ -226,7 +237,7 @@
 
  .service-card:hover {
      transform: translateY(-5px);
-     border-bottom: 4px solid #c6db89;
+     border-bottom: 4px solid #cbe9df;
  }
 
 
@@ -237,7 +248,8 @@
      background: rgba(18, 11, 11, 0.3);
      color: white;
      text-align: center;
-     padding: 202px;
+     padding: 45px;
+     border-radius: 10px;
  }
 
  /* Heading */
@@ -274,8 +286,8 @@
 
  /* Logo size */
  .logo {
-     height: 45px;
-     width: 45px;
+     height: 90px;
+     width: 90px;
      vertical-align: middle;
      object-fit: cover;
      object-position: top;
