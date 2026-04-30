@@ -114,7 +114,7 @@
      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
  }
 
- 
+
  button {
      background-color: #e6af2e;
      color: white;
@@ -167,8 +167,10 @@
      overflow: hidden;
      transition: 0.3s;
      display: block;
-     min-width: 280px; /* controls card size */
-     flex: 0 0 300px; /* 🔥 very important */
+     min-width: 280px;
+     /* controls card size */
+     flex: 0 0 300px;
+     /* 🔥 very important */
      scroll-snap-align: start;
      margin-bottom: 20px;
      text-decoration: none;
@@ -176,8 +178,8 @@
  }
 
  .service-container::-webkit-scrollbar {
-    display: none;
-}
+     display: none;
+ }
 
  .service-content {
      padding: 15px;
@@ -211,8 +213,8 @@
      border-bottom: 4px solid #a4b7be;
  }
 
- .highlight{
-   font-size: 14px;  
+ .highlight {
+     font-size: 14px;
  }
 
 
