@@ -1,14 +1,14 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: #ffffff;
-    color: rgb(0, 0, 0);
-}
+     margin: 0;
+     font-family: system-ui, sans-serif;
+     background-color: whitesmoke;
+     color: black;
+ }
 
 /* NAV */
 header {
@@ -94,13 +94,16 @@ header {
 
 /* HERO */
 .about-hero {
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background: white;
-    background-size: 200% 200%;
+    background: url(images/kampala1.1.png);
+    background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+    background-size: 100%;
     animation: gradientMove 10s ease infinite;
 }
 
@@ -122,19 +125,7 @@ header {
 .hero-text p {
     opacity: 0.7;
     margin-top: 10px;
-}
-
-/* ILLUSTRATION */
-.hero-illustration img {
-    width: 400px;
-    animation: float 4s ease-in-out infinite;
-}
-
-/* FLOAT ANIMATION */
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-12px); }
-    100% { transform: translateY(0px); }
+    color: white;
 }
 
 
@@ -145,7 +136,7 @@ header {
 }
 .about-story {
     padding: 60px 20px;
-    max-width: 800px;
+    max-width: 1500px;
     margin: auto;
     text-align: center;
 }
@@ -180,25 +171,11 @@ header {
     margin-bottom: 10px;
 }
 
-/* STATS */
-.stats {
-    display: flex;
-    justify-content: space-around;
-    padding: 60px 20px;
-    background: #09191c;
-    color: white;
-}
-
-.stat h2 {
-    font-size: 2.5rem;
-    color: #e6af2e;
-}
 
 /* DRIVER */
 .driver-highlight{
     text-align: center;
 }
-
 
 .driver-grid {
     display: grid;
@@ -241,11 +218,15 @@ header {
     margin-top: 20px;
     padding: 12px 25px;
     background: #e6af2e;
-    color: black;
+    color: white;
+    font-weight: bold;
     text-decoration: none;
     border-radius: 25px;
 }
 
+.about-cta a:hover{
+    background-color: #a4b7be;
+}
 /* FADE IN */
 .fade-in {
    
@@ -256,6 +237,27 @@ header {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+/* FOUNDER */
+.founder-section {
+  padding: 80px 20px;
+  background: #a4b7be;
+  color: white;
+}
+
+.founder-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.founder-image img {
+  width: 300px;
+  border-radius: 15px;
 }
 
 
@@ -375,4 +377,9 @@ header {
      .nav-links li {
          margin: 10px 0;
      }
+
+      .founder-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
