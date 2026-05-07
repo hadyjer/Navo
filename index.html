@@ -353,7 +353,7 @@
         </div>
 
     </footer>
-    
+
     <div class="note">
         <p style="text-align: center;">© 2026 Navo | Your Personal Driving Partner. All rights reserved |
             <a href="#">Privacy Policy</a> |
@@ -364,10 +364,15 @@
 
 
     <script>
-        function toggleMenu() {
-            document.querySelector("nav-links").classList.toggle("active");
-        }
-    </script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+});
+</script>
 </body>
 
 </html>
