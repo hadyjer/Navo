@@ -12,7 +12,7 @@
 
  /* NAV */
  header {
-     background: #022033;
+     background: #b8d1e1;
      color: white;
      padding: 5px 20px;
      display: flex;
@@ -46,7 +46,7 @@
  .menu-toggle span {
      height: 3px;
      width: 25px;
-     background: white;
+     background: #022033;
      margin: 4px 0;
      display: block;
  }
@@ -204,7 +204,7 @@
 
  /* footer tag */
  footer {
-     background-color: #022033;
+     background-color: #b8d1e1;
      padding: 20px;
      display: flex;
      justify-content: space-around;
@@ -226,7 +226,7 @@
  .footer-info a {
      transition: 0.3s ease;
      text-decoration: none;
-     color: #908f8f;
+     color: #022033;
      font-size: 15px;
  }
 
@@ -235,12 +235,12 @@
  }
 
  .note {
-     background-color: #022033;
-     color: #ffffff;
+     background-color: #b8d1e1;
+     color: #022033;
  }
 
  a {
-     color: #e0e0e0;
+     color: #022033;
  }
 
  /* MOBILE */
