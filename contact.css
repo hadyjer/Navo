@@ -12,7 +12,7 @@
 
  /* NAV */
  header {
-     background: #b8d1e1;
+     background: #a4b7be;
      color: white;
      padding: 5px 20px;
      display: flex;
@@ -204,7 +204,7 @@
 
  /* footer tag */
  footer {
-     background-color: #b8d1e1;
+     background-color: #a4b7be;
      padding: 20px;
      display: flex;
      justify-content: space-around;
@@ -231,11 +231,11 @@
  }
 
  .footer-info a:hover {
-     color: #e6af2e;
+     color: white;
  }
 
  .note {
-     background-color: #b8d1e1;
+     background-color: #a4b7be;
      color: #022033;
  }
 
