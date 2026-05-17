@@ -536,9 +536,5 @@
         margin: 5px 0;
     }
 
-    footer {
-        text-align: center;
-        flex-direction: column;
-        gap: 30px;
-    }
+  
  }
