@@ -95,13 +95,16 @@
 
 
 
- /* Form */
- form {
-     background: white;
-     padding: 30px;
-     border-radius: 10px;
-     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
- }
+/* FORM */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+    width: 100%;
+    max-width: 420px;   /* 🔥 makes form smaller */
+}
 
  table {
      width: 100%;
@@ -153,18 +156,33 @@
      cursor: pointer;
  }
 
- .booking-wrapper {
-     display: flex;
-     align-items: center;
-     gap: 50px;
-     max-width: 2000px; /* 🔥 keeps it centered instead of stretching */
-     width: 100%;
- }
+ /* WRAPPER */
+.booking-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    max-width: 950px;   /* controls overall size */
+    width: 100%;
+    margin: auto;
+}
+
+/* IMAGE */
+.booking-wrapper img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
 
  .booking {
-     display: flex;
-     gap: 20px;
- }
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
 
 
  .booking-info {
@@ -204,7 +222,7 @@
 
  /* footer tag */
  footer {
-     background-color: #a4b7be;
+     background-color: black;
      padding: 20px;
      display: flex;
      justify-content: space-around;
@@ -226,16 +244,15 @@
  .footer-info a {
      transition: 0.3s ease;
      text-decoration: none;
-     color: #022033;
+     color: white;
      font-size: 15px;
  }
 
  .footer-info a:hover {
-     color: white;
+     color: #e6af2e;
  }
 
  .note {
-     background-color: #a4b7be;
      color: #022033;
  }
 
@@ -265,6 +282,21 @@
      .menu-toggle {
          display: flex;
      }
+
+       .booking-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .booking-wrapper img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    form {
+        max-width: 100%;
+    }
 
 
      /* Hide menu by default */

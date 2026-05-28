@@ -94,7 +94,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    background: url(images/kampala\ \(3\).jpg);
+    background: url(images/bg.jpg);
     background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
@@ -265,7 +265,7 @@ header {
 
  /* footer tag */
  footer {
-     background-color: #a4b7be;
+     background-color: black;
      padding: 20px;
      display: flex;
      justify-content: space-around;
@@ -287,16 +287,15 @@ header {
  .footer-info a {
      transition: 0.3s ease;
      text-decoration: none;
-     color: #022033;
+     color: white;
      font-size: 15px;
  }
 
  .footer-info a:hover {
-     color: white;
+     color: #e6af2e;
  }
 
  .note {
-     background-color: #a4b7be;
      color: #022033;
  }
 

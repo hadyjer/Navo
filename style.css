@@ -1,8 +1,18 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+ html{
+    overflow-x: hidden;
+ }
  body {
      margin: 0;
      font-family: system-ui, sans-serif;
      background-color: whitesmoke;
      color: black;
+       overflow-x: hidden;
  }
 
  header {
@@ -49,8 +59,9 @@
 
  nav ul {
      display: flex;
-     gap: 80px;
- }
+     gap: 40px;
+     flex-wrap: wrap;
+}
 
  nav a {
      color: white;
@@ -88,7 +99,7 @@
  }
 
  section {
-     padding: 10px;
+     padding: 10px 20px;
      max-width: 1236px;
      margin: auto;
  }
@@ -280,7 +291,7 @@
 
  .why-section,
  .promise-section {
-     padding: 50px 20px;
+     padding: 5px 20px;
      max-width: 100%;
      margin: auto;
      display: flex;
@@ -405,7 +416,7 @@
 
  /* footer tag */
  footer {
-     background-color: #a4b7be;
+     background-color: black;
      padding: 20px;
      display: flex;
      justify-content: space-around;
@@ -427,16 +438,16 @@
  .footer-info a {
      transition: 0.3s ease;
      text-decoration: none;
-     color: #022033;
+     color: white;
      font-size: 15px;
  }
 
  .footer-info a:hover {
-     color: white;
+     color: #e6af2e;
  }
 
  .note {
-     background-color: #a4b7be;
+  
      color: #022033;
  }
 

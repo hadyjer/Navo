@@ -116,7 +116,7 @@ ul li {
 /* GRID SERVICES */
 .services-grid {
     padding: 80px 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .grid-container {
@@ -126,9 +126,10 @@ ul li {
 }
 
 .grid-card {
-    background: #f5f5f5;
+    background: #a4b7be;
     padding: 20px;
     border-radius: 10px;
+    color: #022033;
 }
 
 /* ================= PRICING SECTION ================= */
@@ -230,7 +231,7 @@ ul li {
 
 /* footer tag */
 footer {
-    background-color: #a4b7be;
+    background-color: black;
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -252,16 +253,15 @@ footer {
 .footer-info a {
     transition: 0.3s ease;
     text-decoration: none;
-    color: #022033;
+    color: white;
     font-size: 15px;
 }
 
 .footer-info a:hover {
-    color: white;
+    color: #e6af2e;
 }
 
 .note {
-    background-color: #a4b7be;
     color: #022033;
 }
 
