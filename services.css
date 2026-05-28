@@ -64,8 +64,8 @@ nav a:hover {
 
 /* Logo size */
 .logo {
-    height: 100px;
-    width: 100px;
+    height: 65px;
+    width: 65px;
     vertical-align: middle;
     object-fit: cover;
     object-position: top;
@@ -87,6 +87,10 @@ ul li {
     text-align: left;
 }
 
+
+.align{
+   margin-left: 60px;
+}
 
 /* FEATURE SECTIONS */
 .service-feature {
@@ -117,6 +121,7 @@ ul li {
 .services-grid {
     padding: 80px 20px;
     text-align: left;
+    margin-left: 40px;
 }
 
 .grid-container {

@@ -64,8 +64,8 @@ header {
 
 /* Logo size */
  .logo {
-     height: 100px;
-     width: 100px;
+     height: 65px;
+     width: 65px;
      vertical-align: middle;
      object-fit: cover;
      object-position: top;
