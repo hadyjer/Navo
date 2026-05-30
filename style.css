@@ -535,9 +535,6 @@
     box-sizing: border-box;
 }
 
-.footer-newsletter input::placeholder{
-    color: rgba(255,255,255,0.5);
-}
 
 .footer-newsletter button{
     width: 100%;
